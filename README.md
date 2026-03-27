@@ -47,6 +47,7 @@
 
 ## Source
 
-api.energy-charts.info
+**Primary**: ENTSO-E Transparency Platform (official EU)  
+**Fallback**: Energy-Charts API (public)
 
-Public API, no registration required.
+Automatic failover ensures 99%+ uptime.
