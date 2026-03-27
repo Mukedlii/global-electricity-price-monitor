@@ -6,7 +6,7 @@ import { parseStringPromise } from 'xml2js';
 const SUPPORTED_COUNTRIES = ['DE', 'FR', 'AT', 'HU', 'CZ', 'SK', 'RO', 'PL', 'IT', 'ES', 'NL', 'BE', 'CH', 'SI', 'HR'];
 
 const BIDDING_ZONES = {
-    DE: '10Y1001A1001A83F',
+    DE: '10Y1001A1001A83F', // Germany (correct)
     FR: '10YFR-RTE------C',
     AT: '10YAT-APG------L',
     HU: '10YHU-MAVIR----U',
@@ -14,7 +14,7 @@ const BIDDING_ZONES = {
     SK: '10YSK-SEPS-----K',
     RO: '10YRO-TEL------P',
     PL: '10YPL-AREA-----S',
-    IT: '10YIT-GRTN-----B',
+    IT: '10Y1001A1001A73I', // Italy North (fixed - was 10YIT-GRTN-----B)
     ES: '10YES-REE------0',
     NL: '10YNL----------L',
     BE: '10YBE----------2',
