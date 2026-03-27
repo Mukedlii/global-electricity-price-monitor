@@ -6,7 +6,7 @@ import { parseStringPromise } from 'xml2js';
 const SUPPORTED_COUNTRIES = ['DE', 'FR', 'AT', 'HU', 'CZ', 'SK', 'RO', 'PL', 'IT', 'ES', 'NL', 'BE', 'CH', 'SI', 'HR'];
 
 const BIDDING_ZONES = {
-    DE: '10Y1001A1001A83F', // Germany (correct)
+    DE: '10Y1001A1001A82H', // Germany-Luxembourg (correct)
     FR: '10YFR-RTE------C',
     AT: '10YAT-APG------L',
     HU: '10YHU-MAVIR----U',
