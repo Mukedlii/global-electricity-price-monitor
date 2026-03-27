@@ -56,7 +56,7 @@ await Actor.main(async () => {
             const url = `https://web-api.tp.entsoe.eu/api?securityToken=${ENTSOE_TOKEN}&documentType=A44&in_Domain=${biddingZone}&out_Domain=${biddingZone}&periodStart=${periodStart}&periodEnd=${periodEnd}`;
             
             const response = await axios.get(url, {
-                timeout: 10000,
+                timeout: 30000,
                 headers: { 'User-Agent': 'Mozilla/5.0' }
             });
 
@@ -116,7 +116,7 @@ await Actor.main(async () => {
                 const url = `https://api.energy-charts.info/price?bzn=${country}&start=${todayStr}&end=${todayStr}`;
                 
                 const response = await axios.get(url, {
-                    timeout: 10000,
+                    timeout: 30000,
                     headers: { 'User-Agent': 'Mozilla/5.0' }
                 });
 
