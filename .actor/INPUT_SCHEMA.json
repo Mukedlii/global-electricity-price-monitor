@@ -1,20 +1,19 @@
 {
-  "title": "Global Electricity Price Monitor Input",
+  "title": "European Electricity Price Monitor",
   "type": "object",
   "schemaVersion": 1,
   "properties": {
     "countries": {
       "title": "Countries to Monitor",
       "type": "array",
-      "description": "List of country codes (DE, FR, AT, HU, CZ, SK, RO, PL, IT, ES, NL, BE, CH, SI, HR)",
+      "description": "Country codes: DE, FR, AT, HU, CZ, SK, RO, PL, IT, ES, NL, BE, CH, SI, HR",
       "editor": "stringList",
-      "default": ["DE", "FR", "AT", "HU", "CZ", "SK", "RO", "PL", "IT", "ES", "NL", "BE", "CH", "SI", "HR"],
-      "prefill": ["DE", "FR", "AT", "HU"]
+      "default": ["DE", "FR", "AT", "HU", "CZ", "SK", "RO", "PL", "IT", "ES", "NL", "BE", "CH", "SI", "HR"]
     },
     "priceThreshold": {
       "title": "Price Alert Threshold (EUR/MWh)",
       "type": "integer",
-      "description": "Send email alert if any country's price exceeds this value",
+      "description": "Alert if any country exceeds this",
       "default": 200,
       "minimum": 0,
       "maximum": 1000
@@ -22,26 +21,21 @@
     "emailTo": {
       "title": "Alert Email To",
       "type": "string",
-      "description": "Recipient email address for price alerts",
-      "editor": "textfield",
-      "prefill": "your.email@example.com"
+      "editor": "textfield"
     },
     "emailFrom": {
-      "title": "Alert Email From",
+      "title": "Alert Email From (optional)",
       "type": "string",
-      "description": "Sender email address (optional, defaults to gmailUser)",
       "editor": "textfield"
     },
     "gmailUser": {
       "title": "Gmail Username",
       "type": "string",
-      "description": "Your Gmail address for SMTP authentication",
       "editor": "textfield"
     },
     "gmailPass": {
       "title": "Gmail App Password",
       "type": "string",
-      "description": "Gmail app-specific password (not your regular password)",
       "editor": "textfield",
       "isSecret": true
     }

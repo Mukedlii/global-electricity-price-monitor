@@ -130,5 +130,5 @@ await Actor.main(async () => {
         countries: results
     });
 
-    console.log(`Actor finished: ${results.length} countries processed, ${alerts.length} alerts`);
+    console.log(`Done: ${results.length} countries, ${alerts.length} alerts`);
 });
