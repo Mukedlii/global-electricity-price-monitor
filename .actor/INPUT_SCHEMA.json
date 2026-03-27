@@ -21,21 +21,25 @@
     "emailTo": {
       "title": "Alert Email To",
       "type": "string",
+      "description": "Recipient email address for price alerts (optional)",
       "editor": "textfield"
     },
     "emailFrom": {
       "title": "Alert Email From (optional)",
       "type": "string",
+      "description": "Sender email address (defaults to gmailUser if not set)",
       "editor": "textfield"
     },
     "gmailUser": {
       "title": "Gmail Username",
       "type": "string",
+      "description": "Your Gmail address for SMTP (required for email alerts)",
       "editor": "textfield"
     },
     "gmailPass": {
       "title": "Gmail App Password",
       "type": "string",
+      "description": "Gmail App Password (not regular password - enable 2FA first)",
       "editor": "textfield",
       "isSecret": true
     }
