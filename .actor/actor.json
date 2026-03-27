@@ -1,0 +1,7 @@
+{
+  "actorSpecification": 1,
+  "name": "global-electricity-price-monitor",
+  "title": "Global Electricity Price Monitor",
+  "version": "0.0",
+  "input": "./INPUT_SCHEMA.json"
+}
